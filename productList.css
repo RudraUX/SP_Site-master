@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,400;1,900&display=swap');
+
+.container {
+  padding-top: 50px;
+}
+hr {
+  width: 300px;
+  border: 1px solid #000000;
+}
+
+.navbar {
+  background-color: #434444;
+}
+
+@media (max-width: 991.98px) {
+  .navbar {
+    background-color: #40514e;
+  }
+
+  .navbar .navbar-brand {
+    color: rgb(48, 227, 202);
+  }
+  .navbar .nav-link {
+    color: #fff;
+  }
+}
+
+.product-grid {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  /* height: 500px; */
+}
+.product-grid:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.image {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: rgba(130, 135, 135, 0.7);
+}
+.image:hover .overlay {
+  opacity: 1;
+}
+.overlay span {
+  background: #292323;
+  font-size: 12px;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 5px;
+  color: #ffffff;
+  opacity: 10;
+
+  border: 1px solid #555555;
+  padding: 15px;
+  box-shadow: 6px 6px #555555;
+}
+
+.overlay span:hover {
+  text-decoration: none;
+  color: #ffffff;
+  box-shadow: 1px 1px #e91e63;
+
+  background: #e91e63;
+  font-weight: 500;
+}
+
+.detail {
+  color: #ffffff;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.buy {
+  background-color: transparent;
+  color: #434444;
+  border-radius: 2;
+  border: 1px solid #434444;
+  width: 100%;
+  margin-top: 2%;
+}
+.buy:hover {
+  background-color: #e91e63;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+.gotocart {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background: rgb(22, 191, 238);
+  bottom: 40px;
+  right: 50px;
+  border-radius: 50px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  color: white;
+
+  font-size: 22px;
+}
+
+.newArrival {
+  background: green;
+  width: 50px;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+}
+.col-md-7 h2 {
+  color: #555555;
+}
+
+.w-100 {
+  height: 400px;
+}
+
+.cartBtn {
+  background-color: transparent;
+  color: #434444;
+  border-radius: 2;
+  border: 1px solid #434444;
+  width: 100%;
+  margin-top: 2%;
+}
+
+.cartBtn:hover {
+  background-color: #e91e63;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+
+.viewCart {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background: #e91e63;
+  color: #ffffff;
+  bottom: 40px;
+  right: 50px;
+  border-radius: 30px;
+
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  font-size: 22px;
+
+  border: 1px solid #555555;
+  /* padding: 10px; */
+  box-shadow: 6px 6px #555555;
+  align-items: center;
+}
+
+.viewCart:hover {
+  text-decoration: none;
+  color: #ffffff;
+  box-shadow: 1px 1px #555555;
+}
+
+/* .gotoTop:hover{
+    text-decoration: none;
+
+    box-shadow: 1px 1px #555555;
+    background:#ccc;
+    
+} */

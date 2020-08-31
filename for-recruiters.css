@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 17px;
+  color: #fff;
+  line-height: 1.6;
+}
+
+.navbar {
+  background-color: #434444;
+}
+
+@media (max-width: 991.98px) {
+  .navbar {
+    background: #40514e;
+  }
+
+  .navbar .navbar-brand {
+    color: rgb(48, 227, 202);
+  }
+  .navbar .nav-link {
+    color: rgb(255, 255, 255);
+  }
+}
+
+.fr-showCase {
+  background-image: url('../img/15.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fr-showCase h1 {
+  font-size: 50px;
+  line-height: 1.2;
+  color: #fff;
+  padding: 18px;
+  text-transform: capitalize;
+  border: #fff 2px solid;
+}
+
+.fr-showCase p {
+  font-size: 20px;
+  color: #fff;
+}
+.fr-btn {
+  display: flex;
+}
+.fr-showCase .ft-btn1,
+.fr-showCase .ft-btn2 {
+  font-size: 18px;
+  text-decoration: none;
+  color: #11999e;
+  border: #11999e 1px solid;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  transition: 0.6s;
+}
+
+.fr-showCase .ft-btn1:hover,
+.fr-showCase .ft-btn2:hover {
+  background: #30e3ca;
+  color: #fff;
+}
+.ft-btn1 {
+  margin-right: 6px;
+}
+.ft-btn2 {
+  margin-left: 6px;
+}
+#section-a {
+  padding: 20px;
+  background: #f4f4f4;
+  color: #110f0e;
+  text-align: center;
+}
+
+#section-b {
+  padding: 20px;
+  background: #f4f4f4;
+  color: #110f0e;
+  text-align: center;
+}
+
+#section-c {
+  display: flex;
+}
+
+#section-c div {
+  padding: 20px;
+  margin-left: 10px;
+
+  margin-right: 10px;
+}
+
+#section-c .box-1 {
+  background: #f9f9f9;
+  color: #110f0e;
+  width: 50%;
+}
+
+#section-c .box-2 {
+  background: #f9f9f9;
+  color: #110f0e;
+  width: 50%;
+  text-decoration: none;
+}
+.box-2 a {
+  color: #e91e63;
+  text-decoration: none;
+}
+
+.box-2 a:hover {
+  color: #e91e63;
+}
+
+/* .box-1 h3{
+    font-size: 20px;
+    padding:10px;
+} */
+
+.box-1 ol {
+  margin-top: 10px;
+  font-size: 12px;
+  list-style: none;
+  counter-reset: steps;
+  column-count: 2;
+  list-style-type: none;
+}
+.box-1 ol li {
+  counter-increment: steps;
+}
+.box-1 ol li::before {
+  content: counter(steps);
+  margin-right: 0.5rem;
+  background: #e91e63;
+  color: white;
+  width: 1.2em;
+  height: 1.2em;
+  border-radius: 50%;
+  display: inline-grid;
+  place-items: center;
+  line-height: 1.2em;
+}
