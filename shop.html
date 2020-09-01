@@ -292,7 +292,7 @@
               <textarea rows="3" class="form-control" name="text" placeholder="Add Your Qustion"></textarea>
             </div>
     
-
+            <input type="hidden" name="form_submitted" value="1">
             <input type="submit" name="btn" class="btn btn-primary">
 
 
@@ -305,7 +305,7 @@
              
              
 <?php
-if(isset($_POST['btn'])){
+if(isset($_POST["form_submitted"]) and isset($_POST['btn'])){
   $email= $_POST["inputEmail"];
   $phn= $_POST["phn"];
   $name=$_POST["inputName"];
