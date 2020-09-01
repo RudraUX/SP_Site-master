@@ -789,4 +789,70 @@ section .section-title {
 /* Form */
 
 /* End Goto */
+/*NEHA---------------------------------------------------------------------------*/
+#popup
+{
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 600px;
+  padding: 50px;
+  box-shadow: 0 5px 30px rgba(0, 224, 224, 0.966);
+  visibility: hidden;
+  opacity: 0;
+}
+#popup.active
+{
+  top: 50%;
+  background: #fff;
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+}
+#submit_button{
+  position: relative;
+  left: 70%;
+}
 
+
+#close_this{
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 600px;
+  padding: 50px;
+  box-shadow: 0 5px 30px rgba(0, 224, 224, 0.966);
+  visibility: hidden;
+  opacity: 0;
+  
+}
+#close_this.active{
+  top: 50%;
+  background: #fff;
+  visibility: visible;
+  opacity: 1;
+  transition: 0s;
+}
+
+@media screen and (max-width: 500px){
+  #popup{
+    width: 200px;
+    left: 30%;
+  }
+  #submit_button{
+    left: 10%;
+  }
+  #close_this{
+    width: 200px;
+    left: 30%;
+  }
+}
+#blur.active{
+  filter: blur(20px);
+  pointer-events: none;
+  user-select: none;
+}
+
+/*----------------------------------------*/
