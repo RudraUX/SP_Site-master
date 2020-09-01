@@ -42,7 +42,7 @@
     <!-- HomePage -->
 
     <!-- NAVBAR -->
-
+    <div class="blur">
     <nav class="navbar navbar-expand-lg fixed-top py-3">
       <a href="./index3.html" class="navbar-brand">SAFEDOCS TECHNOLOGY</a>
       <button
@@ -73,6 +73,9 @@
           </li>
           <li class="nav-item">
             <a href="./shop.html" class="nav-link">Products</a>
+          </li>
+          <li class="nav-item login-lin">
+          <a href="#" class="nav-link "id="blur" onclick="toggle1()">Login <i class="fa fa-user"></i></a>
           </li>
         </ul>
 
@@ -474,7 +477,65 @@
         duration: 600,
       });
     </script>
-
+      </div>
     <script src="./js/main.js"></script>
+      <!-- LOGIN and SIGNUP NEHA-->
+    <div id="popup">
+        <button type="submit" onclick="toggle1()" class="btn btn-danger" style="float: right;">X</button>
+        <br><br>
+        <div class="row">
+            <div class="col-xs-4">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3>Login Page</h3>
+                    </div><br>
+                    <div class="panel-body">
+                        <form action="#" method="POST">
+                            <div class="form-group">
+                              <p><b>Email Id</b></p>
+                                <label for="id">
+                                    <input type="text" class="form-control" name="id" placeholder="id" required="true" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+                                </label>
+                                <p><b>Password</b></p>
+                                <label for="Password">
+                                    <input type="password" class="form-control" name="password" placeholder="password" required="true" pattern=".{6, }">
+                                </label>
+                            </div>
+                            <button type="submit" name="submit" class="btn btn-primary" id="submit_button">Login</button>
+                            <a href="#" onclick="change1()" id="submit_button">SignUp</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+      
+      <div id="close_this">
+          <button type="submit" onclick="change1()" class="btn btn-danger" style="float: right;">X</button>
+          
+          <form action="#" method="POST">
+              <div class="form-group">
+              <h2>Sign Up</h2>
+              <label for="name">
+                  <input type="text" class="form-control" name="name" placeholder="Name" required="true" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$">
+              </label><br>
+              <label for="email">
+                  <input type="text" class="form-control" name="email" placeholder="email" required="true" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+              </label><br>
+              <label for="password">
+                  <input type="password" class="form-control" name="password" placeholder="Password" required="true" pattern="{6, }">
+              </label><br>
+              <label for="contact">
+                  <input type="contact" class="form-control" name="contact" placeholder="Contact" required="true" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
+              </label><br>
+              <label for="city">
+                  <input type="text" class="form-control" name="city" placeholder="City" required="true" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$">
+              </label><br>
+              <label for="address">
+                  <input type="text" class="form-control" name="address" placeholder="Address" required="true" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$">
+              </label><br>
+              <button type="submit" class="btn btn-primary" onclick="submit_success()" >Submit</button>
+          </form>
+      </div>
   </body>
 </html>
