@@ -25,3 +25,16 @@ $("#navbar a, .btn").on("click", function (event) {
     );
   }
 });
+//login and signup--------------------------------------------------------------------------------------
+function toggle1(){
+  var blur=document.getElementById('blur');
+  blur.classList.toggle('active');
+  var popup=document.getElementById('popup');
+  popup.classList.toggle('active');
+  }
+function change1(){
+  var popup_again=document.getElementById('popup');
+  popup_again.classList.toggle('active');
+  var clos=document.getElementById('close_this');
+  clos.classList.toggle('active');
+}
